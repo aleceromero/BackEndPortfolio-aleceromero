@@ -5,9 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-import java.util.Date;
 
 @Entity
 public class Experiencia {
@@ -15,10 +12,8 @@ public class Experiencia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String puesto;
-    @Temporal(TemporalType.DATE)
-    private Date fechaInicio;
-    @Temporal(TemporalType.DATE)
-    private Date fechaFin;
+    private String fechaInicio;
+    private String fechaFin;
     private String empresa;
     @Column(length=500)
     private String descripcion;
@@ -26,7 +21,7 @@ public class Experiencia {
     public Experiencia() {
     }
 
-    public Experiencia(String puesto, Date fechaInicio, Date fechaFin, String empresa, String descripcion) {
+    public Experiencia(String puesto, String fechaInicio, String fechaFin, String empresa, String descripcion) {
         this.puesto = puesto;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -50,19 +45,19 @@ public class Experiencia {
         this.puesto = puesto;
     }
 
-    public Date getFechaInicio() {
+    public String getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(String fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public String getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(String fechaFin) {
         this.fechaFin = fechaFin;
     }
 
