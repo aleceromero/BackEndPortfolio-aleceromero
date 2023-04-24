@@ -2,7 +2,7 @@
 
 ## Proyecto Integrador Portfolio Web Full Stack, Argentina Programa.
 
-BackEnd desarrollado con SpringBoot en Apacge Netbeans (Java). Las pruebas se realizaron con Postman.
+BackEnd desarrollado con SpringBoot en Apache Netbeans (Java). Las pruebas se realizaron con Postman.
 
 Este portfolio es el proyecto final integrador del curso Argentina Progama (Yo Programo) 3ra cohorte.
 
